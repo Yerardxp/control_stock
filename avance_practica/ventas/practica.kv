@@ -1,0 +1,39 @@
+#:import hex kivy.utils.get_color_from_hex
+
+<Contenedor_01>:
+    orientation : 'vertical'
+    BoxLayout:
+        orientation : 'vertical'
+        canvas.before:
+            Color:
+                rgba: hex('#2480AE')
+            Rectangle:
+                size: self.size
+                pos: self.pos
+        Label:
+            text: 'Hola'
+        Button:
+            text: 'Boton 1'
+        Button:
+            text: 'Boton 2'
+        Button:
+            text: 'Boton 3'
+    BoxLayout:
+        canvas.before:
+            Color:
+                rgba: hex('#7D3C98')
+            Rectangle:
+                size: self.size
+                pos: self.pos
+        Label:
+            text: 'Hola'
+            
+    BoxLayout:
+        canvas.before:
+            Color:
+                rgba: hex('#416555')
+            Rectangle:
+                size: self.size
+                pos: self.pos
+        Label:
+            text: 'Hola'
